@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>객체 spread 연산자</title>
+
+<script>
+    const obj1= {a:1,b:2}
+    const obj2= {c:3}
+    console.log({...obj1,...obj2})  // spread 객체 : 객체 합치기에 사용할수 있다.
+
+    const copieObj = {...obj1}      // 객체 복사에 이용
+    console.log(copieObj);
+    
+    const obj3 = {...obj1,...obj2,b:'b'}    // 객체 복사 + 일부 값 수정
+    const obj4 = {...obj1,b:'b',...obj2}    // 객체 복사 + 일부 값 수정
+    console.log(obj3);
+    console.log(obj4);
+</script>
+</head>
+<body>
+    
+</body>
+</html>
